@@ -1,0 +1,113 @@
+/* English Fonts */
+@font-face {
+    font-family: Poly;
+    src: url('../assets/fonts/Poly-Regular.ttf') format("truetype");
+}
+@font-face {
+    font-family: Roboto;
+    src: url('../assets/fonts/Roboto-Regular.ttf') format("truetype");
+}
+
+/* Chinese Fonts */
+@font-face {
+    font-family: Hiragino;
+    src: url('../assets/fonts/Hiragino-Kaku-Gothic-ProN-W3.otf') format("opentype");
+}
+@font-face {
+    font-family: MS Gothic;
+    src: url('../assets/fonts/MS-Gothic.ttf') format("opentype");
+}
+
+
+body {
+    background-color: #A57BD8;
+}
+
+.container {
+    position: relative;
+    width: 60%;
+    background-color: #5B2D89;
+    margin: 0 auto;
+
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+
+    padding-bottom: 50px;
+    
+    z-index: 2;
+}
+.backgroundImage {
+    width: 100%;
+
+    position: absolute;
+    z-index: 0;
+}
+
+.registrationTitle {
+    font-size: 72px;
+    color: white;
+    text-align: center;
+
+    margin: 10px 10% 30px 10%;
+
+}
+
+
+.formItem {
+    
+    font-family: "Roboto";
+
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #9b9b9b;
+    color: white;
+    font-size: 19px;
+    height: 45px;
+}
+
+.horizontalLine {
+    display: block;
+    border-top: 0.5px solid white;
+    width: 88%;
+    margin: 4% auto;
+}
+
+#submitButton {
+    background-color: #A57BD8;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    font-size: 64px;
+    border-radius: 28px;
+    border: 2px solid white;
+    text-shadow: 0px 0px 2px black;
+    margin: 80px auto 80px auto;
+    padding: 1% 8%;
+}
+
+.dropdownField {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    padding: 0 1.5% 0 1.5%;
+}
+
+label {
+    color: white;
+    font-size: 24px;
+
+
+    width: 67%;
+    display: block;
+    margin: 0 auto 1% auto;
+}
+input {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+.spaceBottom {
+    margin-bottom: 2%;
+}

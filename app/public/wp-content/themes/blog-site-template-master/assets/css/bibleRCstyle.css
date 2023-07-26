@@ -1,0 +1,299 @@
+/* English Fonts */
+@font-face {
+  font-family: Poly;
+  src: url("../assets/fonts/Poly-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+/* Chinese Fonts */
+@font-face {
+  font-family: Hiragino;
+  src: url("../assets/fonts/Hiragino-Kaku-Gothic-ProN-W3.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: MS Gothic;
+  src: url("../assets/fonts/MS-Gothic.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Noto Sans;
+  src: url("../assets/fonts/NotoSansTC-Regular.otf") format("opentype");
+}
+
+
+.topContainer{
+  height: 125px;
+}
+
+
+[lang=en] {
+  font-family: Roboto;
+  font-size:24px;
+}
+
+[lang=zh] {
+  font-family: Noto Sans;
+  font-size: 24px;
+}
+
+
+.bottomNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  max-height: 20%;
+}
+.bottomNavButton {
+  background-color: rgba(91, 45, 137, 0.9);
+  color: white;
+
+  font-family: "Roboto";
+  font-size: 2vw;
+
+  width: 20%;
+  border-color: rgb(209, 172, 255);
+  border-width: 3px;
+  border-radius: 10px;
+  border-style: solid;
+
+  padding: 0.5% 1%;
+}
+
+
+
+.bibleRCabout {
+  backdrop-filter: opacity(10%);
+  background-image: url('../assets/images/bibleRC/splash1.png');
+  height: 1000px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bibleRCabout > * {
+  flex: 1 0 0;
+}
+.bibleRCaboutIcon {
+  height: 1000px;
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  flex: 1 1 0px;
+  
+}
+
+.bibleRCaboutIcon img {
+  width: 345px;
+  height: 345px;
+
+}
+.bibleRCaboutParagraph {
+  height: 1000px;
+  padding-top: 140px;
+  padding-right: 250px;
+  color: white;
+  font-size: 20px;
+}
+.bibleRCaboutParagraph h2 {
+  margin-block-end: 0;
+}
+
+.bibleRCMethod {
+  height: 750px;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  padding-right: 250px;
+}
+.methodTitle {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex: 1 1 0px;
+  color: black;
+}
+
+.methodDetail {
+  margin-top: 40px;
+  flex: 1 1 0;
+  color: black;
+}
+
+.bibleRCLocation{
+  margin-left: 250px;
+  margin-right: 250px;
+  height: 560px;
+  margin-top: 70px;
+  margin-bottom: auto;
+}
+
+.bibleRCLocation .locationTitle{
+  color: black;
+  margin-bottom: 60px;
+}
+
+.bibleRCLocation .locations{
+  color: #592d8a;
+  font-size: 34px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-weight: bold;
+}
+
+
+.bibleRCQ{
+  background-color:#ebe9e7;
+  display: flex;
+  flex-direction: column;
+  padding-left: 450px;
+  padding-right: 330px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.bibleRCQTitle h1{
+  color:#592d8a;
+  font-size: 72px;
+}
+.bibleRCQQ h3{
+  color:#592d8a;
+  margin-block-end: 0;
+  font-weight:normal;
+  font-size: 24px;
+}
+
+.bibleRCQA h3{
+  margin-block-start: 0;
+  font-weight:normal;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1440px)  {
+  .bibleRCaboutIcon{
+    padding-top: 100px;
+  }
+  .bibleRCaboutParagraph{
+    padding-top: 90px;
+    padding-right: 2em;
+  }
+
+  .bibleRCMethod{
+    padding-right: 2em;
+  }
+}
+
+@media screen and (max-width: 1200px)  {
+  .bibleRCaboutIcon{
+    padding-top: 50px;
+  }
+  .bibleRCaboutParagraph{
+    padding-top: 0px;
+    padding-right: 2em;
+  }
+
+  .bibleRCMethod{
+    padding-right: 2em;
+    height: 1000px;
+  }
+
+  .bibleRCLocation{
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .bibleRCQ{
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width: 800px)  {
+  .bibleRCabout{
+    flex-direction: row-reverse;
+    height: auto;
+  }
+  .bibleRCaboutIcon{
+    visibility: hidden;
+  }
+  .bibleRCaboutParagraph{
+    padding-top: 0px;
+    padding-right: 2em;
+  }
+
+  .bibleRCMethod{
+    padding-right: 2em;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .methodDetail{
+    padding-left: 2em;
+    font-size: 26px;
+  }
+  .bibleRCLocation{
+    margin-left: 2em;
+    margin-right: 2em;
+    height:700px;
+  }
+
+  .bibleRCQ{
+    padding: 2em;
+  }
+}
+
+
+@media screen and (max-width: 500px)  {
+  .bibleRCabout{
+    width: 100%;
+    flex-direction: row-reverse;
+    height: auto;
+
+  }
+  .bibleRCaboutIcon{
+    visibility: hidden;
+  }
+  .bibleRCaboutParagraph{
+    padding-top: 0px;
+    padding-right: 2em;
+    visibility: hidden;
+  }
+
+  .bibleRCMethod{
+    padding-right: 2em;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .methodDetail{
+    padding-left: 2em;
+    font-size: 26px;
+  }
+  .bibleRCLocation{
+    margin-left: 2em;
+    margin-right: 2em;
+    height: auto;
+  }
+
+  .bibleRCLocation
+  .locations{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 28px ;
+    grid-auto-flow: dense;
+  }
+
+  .SAsia{
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .bibleRCQ{
+    padding: 2em;
+  }
+}

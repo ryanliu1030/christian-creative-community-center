@@ -1,64 +1,79 @@
 /*
-    Theme Name: Christian Creative Community Center
-    Theme Domain: ChristianCreativeCommunityCenter
-    Version: 1.0
-    Description: Theme for Christian Creative Community Center with Language Support, customized news section, and more.
-    Tags: responsive, language switch supoprt, news section
-    Author: Xinxiang Web Design
-    Author URI: https://www.xinxiangweb.io
-*/
-
-
-
-/* Adjust line heights 
-
- - The headers/titles of each section is decreasing in size. Change h1-h6 to actual headers.
-( the higher the h#, the smaller it is)
-
-Change h1-h8 headers to real headers.
-
+Theme Name: ChristianCreativeCommunityCenter
+Author: Xinxiang Web Design
+Author URI: xinxiangweb.io
+Description: This theme is designed for CCCC ministry
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
 */
 
 /* English Fonts */
+/* English Fonts */
 @font-face {
     font-family: Poly;
-    src: url('../assets/fonts/Poly-Regular.ttf') format("truetype");
-}
-@font-face {
+    src: url("../christiancreativecommunitycenter/assets/fonts/Poly-Regular.ttf") format("truetype");
+  }
+  @font-face {
     font-family: Roboto;
-    src: url('../assets/fonts/Roboto-Regular.ttf') format("truetype");
-}
-
-/* Chinese Fonts */
-@font-face {
+    src: url("../christiancreativecommunitycenter/assets/fonts/Roboto-Regular.ttf") format("truetype");
+  }
+  
+  /* Chinese Fonts */
+  @font-face {
     font-family: Hiragino;
-    src: url('../assets/fonts/Hiragino-Kaku-Gothic-ProN-W3.otf') format("opentype");
-}
-@font-face {
+    src: url("../christiancreativecommunitycenter/assets/fonts/Hiragino-Kaku-Gothic-ProN-W3.otf")
+      format("opentype");
+  }
+  @font-face {
     font-family: MS Gothic;
-    src: url('../assets/fonts/MS-Gothic.ttf') format("opentype");
-}
+    src: url("../christiancreativecommunitycenter/assets/fonts/MS-Gothic.ttf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: Noto Sans;
+    src: url("../christiancreativecommunitycenter/assets/fonts/NotoSansTC-Regular.otf") format("opentype");
+  }
 
 body {
     margin: 0 0 0 0;
 }
 
 .topContainer {
-    background-color: #9B83B8;
+    background-color: #5B2D89;
     width: 100%;
-    padding-bottom: 30px;
-    /* display: flex;
-    align-items: center;
     position: relative;
-    justify-content: flex-start; */
+
+    padding: 20px 0;
 
 }
-.logo {
-    margin-top: auto;
-    width: 35%;
-    height: 100%;
-    padding-left: 10%;
-    transform: translateY(30px);
+#logo {
+
+    width: 50px;
+    height: auto;
+    display: inline-block;
+}
+#logoWrapper {
+    margin: 0 0 0 40px;
+    display: flex;
+}
+#logoWrapper div {
+    display: inline-block;
+    margin-left: 25px;
+    top: 50%;
+}
+#logoWrapper div h1 {
+    margin: 0 0;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 27px;
+    font-family: "Hiragino";
+}
+#logoWrapper div h2 {
+    margin: 0 0;
+    color: white;
+    font-family: "Roboto";
+    font-size: 13.8px;
 }
 .donateButton {
     width: 120px;
@@ -68,24 +83,33 @@ body {
 }
 
 #languages {
-    float: right;
-    clear: both;
     background-color: #5B2D89;
     color: white;
     padding: 5px 5px;
     border: 1px solid #9b83b8;
+
+    position: absolute;
+    top: 0;
+    right: 0;
     z-index: 999;
 }
 
 .navbar {
-    display: block;
-    background: #5B2D89;
+    display: flex;
+    flex-direction: row;
+    background: #8D44E5;
     width: 100%;
     margin-top: auto;
     position: sticky;
     top: 0;
     z-index: 998;
     
+}
+
+.topWrapper {
+    display: flex;
+    height: 125px;
+    align-items: center;
 }
 
 .hamburger {
@@ -95,12 +119,21 @@ body {
 .hlinks {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     list-style-type: none;
-
-
-    margin: 0 auto;
-    padding: 10px 0px;
-    width: 90%;
+    margin: 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 60%;
+}
+.hlinks li {
+    padding: 3% 3%;
+}
+.hlinks li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: color 1s linear 0.5s;
 }
 
 .hlink {
@@ -148,6 +181,57 @@ body {
 .imgEffect2 {
     filter: hue-rotate(90deg);
 }
+
+
+
+
+
+
+.middleSection {
+    display: grid;
+    flex-direction: row;
+    gap: 3%;
+    padding: 3% 4%;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 1fr;
+    align-items: center;
+
+}
+.middleSection img {
+    width: 100%;
+}
+.middleSectionText {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+
+.middleSectionTitle {
+    font-size: 36px;
+    margin-bottom: 22px;
+}
+
+.middleSectionSubtitle {
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Old  */
+
+
+
 .news {
     margin-bottom: -18vh;
 }
@@ -373,8 +457,8 @@ body {
     margin: 0 0;
 }
 .ministriesTitleContainer {
-    background: white;
-    margin: 50px auto 10px auto;
+    background: #5f3a8b;
+    padding: 45px 0;
 }
 .topTitleStyle2 {
     font-family: Roboto;
@@ -382,7 +466,7 @@ body {
     font-size: clamp(30px, 3.33vw, 64px);
 
     margin: 0 auto 10px auto;
-    color: #5b2d89;
+    color: white;
 }
 .bottomTitleStyle2 {
     font-family: Roboto;
@@ -391,7 +475,7 @@ body {
 
 
     margin: 10px auto 0 auto;
-    color: #5b2d89;
+    color: white;
 }
 .titleSection2 {
     display: flex;
@@ -412,8 +496,6 @@ body {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-auto-rows: 28vw;
-
-    margin-top: 30px;
 }
 
 .pink {
@@ -555,7 +637,8 @@ body {
 
 
     margin: 0 auto 10px auto;
-    color: #5b2d89;
+    color: black;
+
 }
 .bottomTitleStyle3 {
     font-family: Roboto;
@@ -840,6 +923,7 @@ h8 {
         flex-direction: row;
         justify-content: space-between;
         padding-bottom: 20px;
+        background-color: #5B2D89;
     }
     .menu, .logo-mobile{
         display: block;

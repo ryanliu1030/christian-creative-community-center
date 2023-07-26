@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Noto Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/NotoSansTC-Bold.otf') format("opentype");
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../assets/fonts/Roboto-Regular.ttf') format("truetype");
+}
+
+.middleSection {
+    display: grid;
+    flex-direction: row;
+    gap: 3%;
+    padding: 3% 4%;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 1fr;
+    align-items: center;
+
+}
+.middleSection img {
+    width: 100%;
+}
+.middleSectionText {
+    max-height: 600px;
+    overflow-y: auto;
+    align-self: flex-start;
+}
+
+
+.middleSectionTitle {
+    font-size: 36px;
+    margin-bottom: 22px;
+    font-family: 'Noto Sans Bold', serif;
+}
+
+.middleSectionSubtitle {
+    font-size: 24px;
+}
+
+.middleSectionParagraph p {
+    color: gray;
+    border-bottom: 1px dotted gray;
+    font-size: 24px;
+    font-family: 'Roboto';
+    padding-bottom: 5px;
+}
